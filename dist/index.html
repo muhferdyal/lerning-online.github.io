@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Website SASS TAILWIND</title>
+  </head>
+  <body>
+    <nav class="flex justify-between items-center py-3 px-4 bg-white">
+      <div class="logo">
+        <img src="../images/logo.png" alt="Logo" class="w-10" />
+      </div>
+
+      <div
+        class="hidden md:flex menu gap-5 items-center list-none font-semibold text-slate-600"
+      >
+        <li><a href="#" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#" class="hover:text-blue-500">Courses</a></li>
+        <li><a href="#" class="hover:text-blue-500">Services</a></li>
+        <li><a href="#" class="hover:text-blue-500">Testimonial</a></li>
+        <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+      </div>
+
+      <button
+        id="menu-button"
+        class="md:hidden text-slate-600 focus:outline-none hover:text-purple-400"
+      >
+        <i class="bx bx-menu text-2xl"></i>
+      </button>
+
+      <div
+        id="menu"
+        class="hidden md:hidden absolute top-16 left-0 w-full list-none"
+      >
+        <li class="border-b border-gray-200">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+        </li>
+        <li class="border-b border-gray-200">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Courses</a>
+        </li>
+        <li class="border-b border-gray-200">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Services</a>
+        </li>
+        <li class="border-b border-gray-200">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Testimonial</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+        </li>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-6 my-7"
+    >
+      <div class="text order-2 md:order-1">
+        <h1 class="text-6xl w-[70%] font-bold">
+          Learn new skills online with top educators
+        </h1>
+        <p class="text-slate-500 my-8 w-[70%]">
+          His ideass somewhere,me,to founding so unable late, the unrecognisable
+        </p>
+        <div
+          class="btn bg-slate-700 inline text-white py-3 px-5 rounded-xl hover:text-black hover:bg-slate-400 transition-all"
+        >
+          Start Learning Today
+        </div>
+      </div>
+      <div class="img-content order-1 md:order-2 relative justify-center grid">
+        <div
+          class="w-full h-32 sm:w-[66%] sm:h-40 rounded-xl bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 absolute -z-10 bottom-0 left-[50%] translate-x-[-50%] translate-y-[0%] animate-pulse"
+        ></div>
+        <img src="../images/co-1.png" alt="img" />
+      </div>
+    </div>
+
+    <div
+      class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mb-7 mt-24"
+    >
+      <div
+        class="rounded-xl flex md:items-center lg:items-start hover:scale-110 hover:shadow-md p-3 transition-all md:row-start-1 md:row-end-3 lg:row-start-1 lg:row-end-2"
+      >
+        <p class="text-2xl font-bold">Our numbers tell more about us</p>
+      </div>
+      <div
+        class="rounded-xl hover:scale-110 hover:shadow-md p-3 transition-all"
+      >
+        <h1 class="text-4xl mb-3 text-cyan-500 font-bold">16+</h1>
+        <p class="text-sm text-slate-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+          labore.
+        </p>
+      </div>
+      <div
+        class="rounded-xl hover:scale-110 hover:shadow-md p-3 transition-all"
+      >
+        <h1 class="text-4xl mb-3 text-cyan-500 font-bold">5k+</h1>
+        <p class="text-sm text-slate-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+          labore.
+        </p>
+      </div>
+      <div
+        class="rounded-xl hover:scale-110 hover:shadow-md p-3 transition-all"
+      >
+        <h1 class="text-4xl mb-3 text-cyan-500 font-bold">3.5k+</h1>
+        <p class="text-sm text-slate-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+          labore.
+        </p>
+      </div>
+    </div>
+
+    <!-- scss -->
+    <div class="markup">
+      <div class="grad">
+        <div class="markup-col-1 px-6">
+          <h1 class="text-6xl font-bold mb-20 ">We add value to our student's journey</h1>
+          <div class="btn-markup bg-slate-900 text-white py-3 px-5 rounded-xl inline ">Learn More</div>
+        </div>
+        <div class="markup-col-2">
+          <div class="markup-card">
+            <div class="header-card">
+              <i class="bx bx-laptop"></i>
+            </div>
+            <div class="text-card">
+              <h3>Online Clasess</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="markup-card">
+            <div class="header-card">
+              <i class='bx bx-qr'></i>
+            </div>
+            <div class="text-card">
+              <h3>Easy Registration</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="markup-card">
+            <div class="header-card">
+              <i class='bx bx-user' ></i>
+            </div>
+            <div class="text-card">
+              <h3>Expert Trainers</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="markup-card">
+            <div class="header-card">
+              <i class='bx bxs-show'></i>
+            </div>
+            <div class="text-card">
+              <h3>Easy to use</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+<div class="w-full h-full grid grid-cols-1 sm:grid-cols-2 px-10 mb-32 justify-center mt-32 ">
+  <h1 class="text-6xl font-bold ">We'll help you learn <span class="underline bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">what you like</span></h1>
+
+  <div class="flex gap-5 mt-20 ">
+    <h1 class="text-4xl text-cyan-500 font-bold content-center ">01.</h1>
+    <div class="">
+      <h2 class="text-2xl font-semibold mb-3">Go at you own pace</h2>
+      <p class=" max-w-[360px]">Fusce sit amet justo enimsed ullamcorper sem ut est scelerisque
+        Sed ultrices ligula ipsum simple dummy suspendisse potenti dapibus</p>
+    </div>
+  </div>
+  
+  <div class="flex gap-5  items-center mt-20 sm:mt-0">
+    <h1 class="text-4xl text-cyan-500 font-bold content-center ">02.</h1>
+    <div class="">
+      <h2 class="text-2xl font-semibold mb-3">Learn from industry experts</h2>
+      <p class=" max-w-[360px]">Aenean tempor tortor in metus pretium, sed. faucibus ligula accumsan. Vivamus consequat imperdiet lacus ac cursus.
+        Donec vel urna vitae sem sodales tristique vitae elementum nullan.</p>
+    </div>
+  </div>
+  
+  <div class="flex gap-5 sm:mt-40 items-center mt-20">
+    <h1 class="text-4xl text-cyan-500 font-bold content-center ">03.</h1>
+    <div class="">
+      <h2 class="text-2xl font-semibold mb-3">Find video course on almost any topic</h2>
+      <p class=" max-w-[360px]">Vivamus bibendum elit vel pharetra luctus. Suspendisse elementum lobortis laoreet. Cras placerat eleifend iaculis.</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="my-44 lg:px-32 relative grid grid-cols-1 sm:grid-cols-2 items-center">
+  <div class="bg-sky-200 rounded-3xl absolute bottom-0 -z-10 left-[50%] translate-x-[-50%] translate-y-[0%] lg:w-[85%] lg:h-[85%] w-full h-full"></div>
+  <div class="flex justify-center ">
+
+    <img src="../images/student.png" alt="img" class="text-center ">
+  </div>
+    <div class="mr-10 text-center sm:text-start ">
+      <h1 class="text-3xl font-bold my-6 md:text-4xl lg:text-6xl">Student's Say</h1>
+      <p class="font-bold text-sm mb-7 lg:text-xl">"Finally, I've found a course platform that covers all bases for a bootstrapped startup. We were able to launch in days, not months. We have learned a lot!"</p>
+
+      <p class=" font-semibold text-sky-600">Novia Larasati</p>
+      <p>New York, USA</p>
+    </div>
+  
+</div>
+
+<div class="flex justify-center items-center  w-full mb-8">
+<div class="text-center w-[40%]">
+
+  <h1 class=" text-4xl sm:text-5xl font-bold my-7">Start learning today. Grow your career</h1>
+  <p class="mb-10 text-xl sm:text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cum laudantium at dolor sit debitis.</p>
+
+
+  <input type="text" placeholder="Learning Now" class="bg-slate-800 px-8 py-3 rounded-xl text-center text-sm text-white">
+</div>
+</div>
+<hr class="my-10">
+<div class=" grid grid-cols-1 sm:grid-cols-2 justify-between items-center my-12 lg:mx-20">
+  <div class="logo  flex justify-center lg:justify-start">
+    <img src="../images/logo.png" alt="img" class="w-10">
+  </div>
+  
+
+  <div class=" flex flex-wrap gap-8 list-none font-bold  mt-20 sm:mt-0 ">
+    <li  class="relative  group n"> <span class="absolute w-0 h-[4px] rounded-xl bg-red-400 -bottom-3 transition-[3s] group-hover:w-full"></span> 
+      <span class="absolute w-0 h-full rounded-md -z-10 bg-purple-400 transition-[3s] group-hover:w-full"></span> <a href="#" class="py-5 px-4 group-hover:text-white transition-all">Take a tour</a></li>
+    <li  class="relative  group n"> <span class="absolute w-0 h-[4px] rounded-xl bg-red-400 -bottom-3 transition-[3s] group-hover:w-full"></span> 
+      <span class="absolute w-0 h-full rounded-md -z-10 bg-purple-400 transition-[3s] group-hover:w-full"></span> <a href="#" class="py-5 px-4 group-hover:text-white transition-all">Courses</a></li>
+    <li  class="relative  group n"> <span class="absolute w-0 h-[4px] rounded-xl bg-red-400 -bottom-3 transition-[3s] group-hover:w-full"></span> 
+      <span class="absolute w-0 h-full rounded-md -z-10 bg-purple-400 transition-[3s] group-hover:w-full"></span> <a href="#" class="py-5 px-4 group-hover:text-white transition-all">Services</a></li>
+    <li  class="relative  group n"> <span class="absolute w-0 h-[4px] rounded-xl bg-red-400 -bottom-3 transition-[3s] group-hover:w-full"></span> 
+      <span class="absolute w-0 h-full rounded-md -z-10 bg-purple-400 transition-[3s] group-hover:w-full"></span> <a href="#" class="py-5 px-4 group-hover:text-white transition-all">Privacy Policy</a></li>
+  </div>
+
+</div>
+<p class="text-slate-400 text-sm  text-center">ferdydicoding ©2024</p>
+    <script src="./main.js"></script>
+  </body>
+</html>

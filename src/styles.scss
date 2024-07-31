@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply font-roboto mx-12;
+  .markup {
+    @apply  flex items-center justify-center mb-10;
+    .grad {
+      @apply bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 grid grid-cols-1 sm:grid-cols-2 justify-between items-center rounded-[70px] py-28 px-10 gap-7 my-16 mx-10;
+      .markup-col-2{
+        @apply grid grid-cols-2 gap-6;
+        .markup-card{
+           
+            .header-card{
+                @apply text-xl bg-yellow-50 rounded-lg py-1 px-2 inline-block mb-5;
+            }
+            .text-card{
+                h3{
+                    @apply text-lg font-bold;
+                }
+                p{
+                    @apply text-sm text-slate-600;
+                }
+            }
+        }
+      }
+    }
+  }
+
+
+
+  
+}
